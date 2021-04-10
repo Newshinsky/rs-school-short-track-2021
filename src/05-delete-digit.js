@@ -10,7 +10,7 @@
  *
  */
 function deleteDigit(num) {
-  const str = ${num};
+  const str = `${num}`;
   const arr = [];
 
   for (let i = 0; i < str.length; i++) {
