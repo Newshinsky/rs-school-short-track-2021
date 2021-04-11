@@ -12,13 +12,21 @@
  *
  */
 function findIndex(array, value) {
-  let result = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === value) {
-      result = i;
+  let first = 0;
+  let last = array.length - 1;
+  let middle;
+
+  while (first <= last) {
+    middle = Math.floor((first + last) / 2);
+    if (array[middle] === value) {
+      return middle;
+    } if (array[middle] < value) {
+      first = middle + 1;
+    } else {
+      last = middle - 1;
     }
   }
-  return result;
+  return middle;
 }
 
 module.exports = findIndex;
