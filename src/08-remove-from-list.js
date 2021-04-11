@@ -17,7 +17,6 @@
  * }
  */
 
-
 function removeKFromList(l, k) {
   let nodeList = l;
 
@@ -31,6 +30,5 @@ function removeKFromList(l, k) {
 
   return l;
 }
-
 
 module.exports = removeKFromList;
