@@ -13,7 +13,7 @@
  */
 function findIndex(array, value) {
   let first = 0;
-  let last = array.length - 1;
+  let last = array.length;
   let middle;
 
   while (first <= last) {
@@ -21,9 +21,9 @@ function findIndex(array, value) {
     if (array[middle] === value) {
       return middle;
     } if (array[middle] < value) {
-      first = middle + 1;
+      first = middle;
     } else {
-      last = middle - 1;
+      last = middle;
     }
   }
   return middle;
