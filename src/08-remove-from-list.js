@@ -17,8 +17,9 @@
  * }
  */
 
-function removeKFromList(/* l, k */) {
-   let nodeList = l;
+
+function removeKFromList(l, k) {
+  let nodeList = l;
 
   while (nodeList !== null) {
     if (nodeList.value === k) {
